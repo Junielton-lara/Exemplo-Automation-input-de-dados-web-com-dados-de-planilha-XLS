@@ -1,0 +1,18 @@
+{
+    "name": "gerar-arquivo-de-retorno",
+    "version": "1.0.0",
+    "description": "gerar arquivo de retorno desenvolvido por Jr - 01/2022",
+    "main": "index.js",
+    "dependencies": {
+        "bootstrap": "^4.1.3",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Junielton lara",
+    "license": "https://github.com/Junielton-lara"
+}

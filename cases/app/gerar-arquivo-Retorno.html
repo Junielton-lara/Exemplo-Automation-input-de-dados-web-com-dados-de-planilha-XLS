@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gerador de arquivo de retorno</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <form class="form-signin my-3">
+
+            <div>
+                <div>
+                    <div class="form-group">
+                        <h3>Gerador de arquivo de retorno</h3>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="">Data do cabeçalho arquivo</label>
+                                <input type="number" class="form-control" value="050122" id="dataCabecalho" placeholder="dd/mm/aa" required>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="">Número do Titulo</label>
+                                <input type="text" maxlength="8" class="form-control" id="numeroDocumento" value="12225352" placeholder="N° de documento">
+
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="">Valor do titulo</label>
+                                <input type="text" maxlength="13" class="form-control" id="valorTitulo" value="0000000000914" placeholder="">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="">Valor a pagar do titulo</label>
+                                <input type="text" maxlength="13" class="form-control" id="valorPagoTitulo" value="0000000000914" placeholder="">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="">Data Vencimento do Título</label>
+                                <input type="number" class="form-control" id="DataVencimentoTitulo" value="210122" placeholder="">
+
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="button" class="btn btn-info" id="adc_titulo" value="Adicionar titulo" onclick="incluirTitulo(numeroDocumento.value,valorTitulo.value,valorPagoTitulo.value,DataVencimentoTitulo.value)">
+                            </div>
+                        </div>
+
+                        <div id="gridTitulos">
+                            <table id="tbTitulos" class="table table-success table-hover">
+                                <thead>
+                                    <td>Codigo</td>
+                                    <td>Número do Titulo</td>
+                                    <td>Valor do titulo</td>
+                                    <td>Valor a pagar do titulo</td>
+                                    <td>Data Vencimento do Título</td>
+                                </thead>
+
+                            </table>
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <input type="button" class="btn btn-success" id="gerar_arquivo" value="Gerar arquivo de retorno" onclick="gerarArquivo()" />
+                                </div>
+                            </div>
+                        </div>
+        </form>
+        </div>
+        <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./node_modules/moment/moment.js"></script>
+        <script src="https://momentjs.com/downloads/moment.min.js"></script>
+</body>
+
+</html>
+
+<script src="app.js"></script>

@@ -1,0 +1,8 @@
+CODIGO TITULO
+DATA DA BAIXA (NÃO ACHEI)
+DATA DO VENCIMENTO 
+VALOR TOTAL TITULO
+VALOR A PAGAR DO TITULO 
+
+=====================
+Versão 2 ler o arquivo de retorno e gerar os dados
